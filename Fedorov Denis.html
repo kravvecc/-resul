@@ -6,6 +6,9 @@
     <meta name="description" content="Резюме Федорова Дениса">
     <meta name="keywords" content="fedorov, cv , resume">
     <title>Fedorov Denis</title>
+
+    <link rel="stylesheet" href="fedorov.d.css">
+    
 </head>
 
 
@@ -13,7 +16,10 @@
 
 
 <body>
-<img src="foto/img ava.jpg" alt="здесь должна быть аватарка" width="200">
+    <div class="info">
+<img src="foto/img ava.jpg" alt="здесь должна быть аватарка" width="200" class="img">
+
+    <div class="info-text">
     <h1>Федоров Денис</h1>
     <p>Ученик по обучению на <strong>frontend разработчик</strong></p>
     <p>Люблю играть в <strong>компьютерные игры</strong> и в <strong>баскетбол</strong> </p>
@@ -24,7 +30,13 @@
 <a href="https://www.instagram.com/" target="_blank">Instagramm </a>
 /
 <a href="https://www.Telegramm" target="_blank">Telegramm </a>
+    </div>
+    </div>
 
+<br>
+<br>
+
+<div class="card-1">
 <h2>
     Мои хобби
 </h2>
@@ -34,9 +46,15 @@
     <li>Баскетбол</li>
     <li>Китай</li>
 </ol>
+</div>
+
+
+
 
 <br>
 
+
+<div class="card-2">
 <h2>Опыт работы</h2>
 <table>
     <thead>
@@ -65,29 +83,35 @@
         </tr>
     </tbody>
 </table>
+</div>
 
-<h2>Связаться со мной</h2>
-
-<form action="">
+<br>
 
 
-    <div>
+
+<form action="" class="form">
+    <h2>Связаться со мной</h2>
+
+    <div class="form-row">
+
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="name" id="name" placeholder="Введите имя">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="email">Ваш Email:</label>
         <input type="email" id="email" placeholder="Введите почту">
     </div>
+    </div>
 
-    <div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
+        
         <textarea id="message" cols="25" rows="5"  placeholder="Введите сообщение..."></textarea>
     </div>
 
-    <input type="submit" value="Отправить">
+    <input class="btn" type="submit" value="Отправить">
  
 
 </form>
